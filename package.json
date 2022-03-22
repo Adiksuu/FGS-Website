@@ -1,0 +1,19 @@
+{
+  "name": "fgs-website",
+  "version": "1.0.0",
+  "description": "It's a FarmerGameSimulator website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adiksuu/FGS-Website.git"
+  },
+  "author": "CodeAdiksuu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adiksuu/FGS-Website/issues"
+  },
+  "homepage": "https://github.com/Adiksuu/FGS-Website#readme"
+}
