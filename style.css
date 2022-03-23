@@ -82,7 +82,6 @@ a {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
 /* KLASY CSS */
@@ -524,6 +523,9 @@ img {
   opacity: 0;
   transition: all 0.5s ease;
 }
+.scrollToTop-btn i {
+    color: #000;
+}
 
 .scrollToTop-btn.active{
   bottom: 20px;
@@ -532,16 +534,54 @@ img {
 }
 
 
-/* REVEAL EFFECT STYLING */
-
-.reveal{
-  position: relative;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: all 1.5s ease;
+.features .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
+.features .box-container .box{
+    flex: 1 1 25rem;
+    background: var(--white-color);
+    border-radius: .5rem;
+    border: 2px solid #000;
+    margin:1.5rem;
+    padding:2rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
 }
+
+.features p {
+    font-size: 12px;
+    font-weight: 500;
+    color:var(--black-color);
+}
+.features h3 {
+    color: var(--first-color);
+}
+
+.features img {
+    max-width: 120px;
+}
+
+ .box .btn{
+      display: inline-block;
+      margin-top: 1rem;
+      padding:.3rem 2rem;
+      border-radius: 5rem;
+      background:var(--first-color);
+      font-size: 1.4rem;
+      color:#fff;
+      cursor: pointer;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+      transition: all .3s linear;
+  }
+  
+  .box .btn:hover{
+      transform: scale(0.95);
+  }
+  .box a i{
+      font-size: 15px;
+  }
