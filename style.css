@@ -427,7 +427,7 @@ img {
 /* COOKIE BOX STYLING */
 
 .wrapper {
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     left: 30px;
     background: var(--white-color);
