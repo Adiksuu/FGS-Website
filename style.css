@@ -502,6 +502,18 @@ img {
 .buttons a {
     color: var(--first-color);
 }
+#patreon_button {
+    background: var(--white-color);
+    color: var(--first-color);
+}
+#patreon_button i {
+    font-size: 15px;
+}
+#patreon_button:hover {
+    background: var(--first-color);
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+}
 
 /* SCROLL TOP STYLING */
 
@@ -585,3 +597,30 @@ img {
   .box a i{
       font-size: 15px;
   }
+
+  .newsletter{
+    text-align: center;
+    padding:5rem 1rem;
+    background: url(/Images/subscribe-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.newsletter h3{
+    color:#fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.newsletter p{
+    color:#fff;
+    font-size: 1.6rem;
+    margin:2rem auto;
+    width:70rem;
+}
+
+@media (max-width:768px){
+    .newsletter p{
+        width:auto;
+    }
+}
