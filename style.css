@@ -756,6 +756,9 @@ img {
   .blog-box{
       width:90%;
   }
+  #download {
+      display: none;
+  }
 }
 
 @media(max-width:550px){
@@ -767,4 +770,54 @@ img {
   #blog{
       padding:20px;
   }
+}
+
+
+#download{
+    min-height: 75vh;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+
+#download h3{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+#download .text{
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100px;
+    font-size: 1.8rem;
+}
+#download .btn-groups{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 2rem;
+}
+#download .btn-groups a{
+    margin: 1rem;
+    background-color: var(--first-color);
+    border-radius: .3rem;
+    color: #fff;
+    padding: 1.4rem 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    transition: .3s linear;
+    border: 2px solid var(--first-color);
+}
+#download .btn-groups a:hover{
+    background-color: var(--white-color);
+    border: 2px solid var(--first-color);
+}
+#download .btn-groups a#soon {
+    background-color: var(--white-color);
+    border: 2px solid var(--first-color);
+    cursor: default;
 }
