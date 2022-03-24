@@ -756,7 +756,7 @@ img {
   .blog-box{
       width:90%;
   }
-  #download {
+  #download, .nav__item.download {
       display: none;
   }
 }
