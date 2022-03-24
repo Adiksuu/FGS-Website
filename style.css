@@ -154,7 +154,7 @@ img {
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: var(--black-color);
+        background-color: var(--white-color);
         transition: .5s linear;
     }
 }
@@ -165,7 +165,7 @@ img {
 
 .nav__link {
     position: relative;
-    color: var(--white-color);
+    color: var(--first-color);
 }
 
 .nav__link:hover {
