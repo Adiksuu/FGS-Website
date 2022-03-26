@@ -52,3 +52,32 @@ scrollBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+
+
+ const popupScreen = document.querySelector(".popup-screen");
+    const popupBox = document.querySelector(".popup-box");
+    const closeBtn = document.querySelector(".close-btn");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        popupScreen.classList.add("active");
+      }, 500);
+    });
+
+    closeBtn.addEventListener("click", () => {
+        
+        popupScreen.classList.remove("active"); 
+        
+      document.cookie = "News=News; max-age=" + 1 * 2 *2 ;
+    });
+
+    
+    const WebsiteCookie = document.cookie.indexOf("News=");
+
+    if(WebsiteCookie != -1){
+      popupScreen.style.display = "none";
+    }
+    else{
+      popupScreen.style.display = "flex";
+    }
