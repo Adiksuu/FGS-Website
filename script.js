@@ -69,7 +69,7 @@ scrollBtn.addEventListener("click", () => {
         
         popupScreen.classList.remove("active"); 
         
-      document.cookie = "News=News; max-age=" + 1 * 2 *2 ;
+      document.cookie = "News=News; max-age=" + 24 * 12 *12 ;
     });
 
     
@@ -81,3 +81,10 @@ scrollBtn.addEventListener("click", () => {
     else{
       popupScreen.style.display = "flex";
     }
+
+function newWeb() {
+  window.open("https://patreon.com/adiksuu", "target=_blank");
+}
+function downloadGame() {
+  window.open("https://github.com/Adiksuu/Farmer-Game-Simulator/releases/download/Farmer-Game-v1.8/game.exe", "target=_blank");
+}

@@ -619,9 +619,7 @@ img {
 
 .newsletter p{
     color:#fff;
-    font-size: 1.6rem;
     margin:2rem auto;
-    width:70rem;
 }
 
 @media (max-width:768px){
@@ -988,4 +986,81 @@ img {
 
 .close-btn:hover{
   opacity: 1;
+}
+
+
+.wrappers{
+  display: grid;
+  margin: 50px 90px auto;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media (max-width: 700px) {
+  .wrappers{
+    margin: 50px auto;
+  }
+}
+.wrappers .box{
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.wrappers .box .front-face{
+  background: var(--white-color);
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #000;
+  align-items: center;
+  transition: all .5s ease;
+}
+.box .front-face .icon{
+  height: 80px;
+}
+.box .front-face .icon i{
+  font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .front-face .icon i,
+.box .front-face span{
+  background: linear-gradient(-135deg, #ff9b29, #d66316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(-135deg, #ff9b29, #d66316);
+  transform: translateY(110px) rotateX(-90deg);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: center;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(110px) rotateX(90deg);
 }

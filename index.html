@@ -138,8 +138,53 @@
     
         <h3>BECOME A PATRON</h3>
         <p>If you want to help me develop and create new projects, become my patron!</p>
-        <a href="https://patreon.com/adiksuu" class="button" id="patreon_button">Become a patron <i class="fab fa-patreon"></i></a>
+        <div class="wrappers">
+            <div class="box" onclick="newWeb();">
+                <div class="front-face">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <span>Source Code</span>
+                </div>
+                <div class="back-face">
+                    <span>Source Code</span>
+                    <p>
+                        By becoming a patron you get access to the Source Code of my projects
+                    </p>
+                </div>
+            </div>
+            <div class="box" onclick="newWeb();">
+                <div class="front-face">
+                    <div class="icon">
+                        <i class="fas fa-lock-alt"></i>
+                    </div>
+                    <span>Private Posts</span>
+                </div>
+                <div class="back-face">
+                    <span>Private Posts</span>
+                    <p>
+                        By becoming a patron you can view private posts!
+                    </p>
+                </div>
+            </div>
+            <div class="box" onclick="newWeb();">
+                <div class="front-face">
+                    <div class="icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <span>Giveaways</span>
+                </div>
+                <div class="back-face">
+                    <span>Giveaways</span>
+                    <p>
+                        By becoming a patron, you can take part in giveaways for interesting prizes!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="https://patreon.com/adiksuu" class="button" id="patreon_button">Become a patron <i class="fab fa-patreon"></i></a> -->
     </div>
+
 
 
 </main>
@@ -151,20 +196,20 @@
             <h3>UPDATES</h3>
             <p>There are often changes to the game that improve the gameplay! The game is already in v1.8 and we are still working on
             more updates!</p>
-            <a href="https://github.com/Adiksuu/Farmer-Game-Simulator/releases/download/Farmer-Game-v1.8/game.exe" class="btn dro">Download... <i class="fas fa-download"></i></a>
+            <a href="#" class="btn dro" onclick="downloadGame();">Download... <i class="fas fa-download"></i></a>
         </div>
         <div class="box">
             <img src="images/github.png" alt="">
             <h3>GITHUB</h3>
             <p>The game has its own github repository with all the information and news!</p>
-            <a href="https://github.com/Adiksuu/Farmer-Game-Simulator/releases/download/Farmer-Game-v1.8/game.exe" class="btn dr">Download... <i class="fas fa-download"></i> </a>
+            <a href="#" class="btn dr" onclick="downloadGame();">Download... <i class="fas fa-download"></i> </a>
         </div>
         <div class="box">
             <img src="images/web.png" alt="">
             <h3>OWN WEBSITE</h3>
             <p>The game also has its own website where you are right now! Here you will find the most important information and much
             more!</p>
-            <a href="https://github.com/Adiksuu/Farmer-Game-Simulator/releases/download/Farmer-Game-v1.8/game.exe" class="btn dr">Download... <i class="fas fa-download"></i> </a>
+            <a href="#" class="btn dr" onclick="downloadGame();">Download... <i class="fas fa-download"></i> </a>
         </div>
         
         <div class="box">
@@ -172,7 +217,7 @@
             <h3>NO BORING</h3>
             <p>I try to make the game last as long as possible and not to get bored too quickly! With each update, the game comes with
             a lot of news and innovations!</p>
-            <a href="https://github.com/Adiksuu/Farmer-Game-Simulator/releases/download/Farmer-Game-v1.8/game.exe" class="btn dr">Download... <i class="fas fa-download"></i> </a>
+            <a href="#" class="btn dr" onclick="downloadGame();" >Download... <i class="fas fa-download"></i> </a>
         </div>
     </div>
 </section>
@@ -265,15 +310,17 @@
         <h3>Download the game</h3>
         <p class="text">Click on the button to download the game</p>
         <div class="btn-groups flex">
-            <a href="#" id="soon">
+            <a href="#download" id="soon">
                 <i class="fas fa-play"></i> COMMING SOON...
             </a>
-            <a href="https://github.com/Adiksuu/Farmer-Game-Simulator/releases/download/Farmer-Game-v1.8/game.exe">
+            <a href="#download" onclick="downloadGame();">
                 <i class="fas fa-gamepad"></i> DOWNLOAD NOW
             </a>
         </div>
     </div>
 </section>
+
+
 
 <footer class="footer">
     <p class="footer__title">Adiksuu</p>
