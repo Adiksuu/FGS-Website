@@ -606,7 +606,7 @@ img {
   .newsletter{
     text-align: center;
     padding:5rem 1rem;
-    background: url(/Images/subscribe-bg.png) no-repeat;
+    background: url(Images/subscribe-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
